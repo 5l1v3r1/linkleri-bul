@@ -5,7 +5,8 @@ links = []
 frames = []
 
 #print("Taranılacak Web Sayfasının Adresini Giriniz: ")
-site = "https:\\mypythonsec.wordpress.com"
+#site=input()
+site = "https://docs.docker.com/get-started/part2/"
 
 sayfa = urllib.request.urlopen(site)
 html = sayfa.read().decode('utf-8')
@@ -52,7 +53,7 @@ def javascript():
 
         for i in gc.find_all("script"):
             a = i.get("src")
-            print(a)
+            #print(a)
 
     else:
         print("Siteye Bağlanılamadı.")
@@ -70,7 +71,8 @@ for i in frames:
     f.write(str(i) + "\n")
 
 for j in links:
-    a.write(str(j) + "\n")
+    #a.write(str(j) + "\n")
+    print(str(j)+"\n")
 
 a.close()
 f.close()
