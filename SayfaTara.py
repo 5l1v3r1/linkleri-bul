@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 links = []
 frames = []
 
-print("Taranılacak Web Sayfasının Adresini Giriniz: ")
-site = input()
+#print("Taranılacak Web Sayfasının Adresini Giriniz: ")
+site = "https:\\mypythonsec.wordpress.com"
 
 sayfa = urllib.request.urlopen(site)
 html = sayfa.read().decode('utf-8')
